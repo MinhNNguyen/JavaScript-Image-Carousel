@@ -1,0 +1,20 @@
+Adaptive Images:
+
+1. Append the given .htaccess file in the adaptive-images folder to your existing .htaccess file
+   (.htaccess is a hidden file so you may need to adjust settings in order to reveal hidden files)
+
+2. Add the adaptive-images.php file to the document-root of your server (where your .htaccess file is also located).
+
+3. Add this line of JavaScript as high in the <head> of your site as possible, before any other JS: 
+   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+
+   An example of this can be found in our index.html
+
+
+
+More detailed instructions can be found in the instructions.htm file in the adaptive images folder or
+at the adaptive images website http://adaptive-images.com/details.htm
+
+
+If you have problems getting Adaptive Images to work, the Carousel can also be used without it, and
+Adaptive Images can be added later.

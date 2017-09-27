@@ -1,0 +1,100 @@
+body {
+  background: #111;
+}
+
+.carouselTest {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.carouselTest img {
+	position: absolute;
+}
+
+#parent-carousel-1 {
+  top: 50px;
+  left: ;
+  background: black;
+  border-style: solid;
+  border-color: grey;
+}
+
+
+button
+{
+	position: relative;
+}
+
+figcaption{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  bottom: .75em;
+  overflow-x: auto;
+  padding: .25em;
+  color: #fff;
+  border-radius: 2px;
+}
+figcaption a{
+  color: #fff;
+}
+a{
+  color:#fff;
+}
+.next, .prev{
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2.0em;
+  margin-top: -.75em;
+  opacity: .8;
+  user-select: none;
+}
+.next:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next{
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.auto {
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #000000;
+  padding: 5px 5px 5px 5px;
+  width: 65px;
+}
+
+.auto:hover {
+  background: #1c83c4;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-device-width : 500px) {
+    #next, #prev {
+      font-size: 3em;
+    }
+  }
+
+@media only screen and (max-device-width : 750px) {
+  .next, .prev {
+    font-size: 2.4em;
+  }
+}
